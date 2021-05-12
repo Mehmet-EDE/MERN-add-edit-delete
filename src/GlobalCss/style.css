@@ -1,0 +1,23 @@
+.rooti{
+    max-width: 346px !important;
+    margin: 5px !important;
+    /* box-shadow: 5px 3px 35px grey !important; */
+    background: #192734 !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.TextLabel {
+    color:floralwhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.HeaderText{
+    background: #687980;
+    font-weight: bold;
+}
+.MuiCard-root {
+    overflow: hidden;
+    background: transparent;
+    display: inline-block;
+    margin: auto;
+}
