@@ -22,7 +22,7 @@ const denemeSchema = new Schema({
     },
     photo:{
         type:String,
-        required:true,
+        required:false,
     },
     hiringdate:{
         type:String,

@@ -44,11 +44,14 @@ export default class EmployeeList extends Component {
             .catch(err => { console.log(err) })
     }
     deletePerson(id) {
-        axios.delete('http://localhost5858/person/delete/' + id)
-            .then(res => { console.log(res.data) })
-        this.setState({
-            persons: this.state.persons.filter(per => per._id !== id)
-        })
+        var personId=this.state.persons.find(per => per._id !== id)._id
+        axios.delete('http://localhost5858/person/delete/' + personId)
+            .then(res => { console.log(res.data)
+                this.setState({
+                    persons: this.state.persons.filter(per => per._id !== id)
+                }) })
+            .catch(err => { console.log(err) })
+        
     }
     personList() {
         if (this.state.persons) {

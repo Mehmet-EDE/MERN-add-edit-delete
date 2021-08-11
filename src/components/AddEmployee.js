@@ -105,11 +105,11 @@ export default class addEmployee extends Component {
                 <br />
             <TextField label="Surname :"
                 value={this.state.surname}
-                onChange={this.onChangesurname}></TextField>
+                onChange={this.onChangeSurname}></TextField>
                 <br />
             <TextField label="E-mail :"
                 value={this.state.email}
-                onChange={this.onChangeEmail}></TextField>
+                onChange={this.onChangeMail}></TextField>
                 <br /><br />
             <ReactFileReader handleFiles={this.handleFiles}
                 fileTypes={[".jpeg", ".png", ".jpg"]}
@@ -126,7 +126,7 @@ export default class addEmployee extends Component {
                 label="Hiring Date"
                 type="date"
                 value={this.state.hiringdate}
-                onChange={this.onChangeHiringdate}
+                onChange={this.onChangeHiringDate}
                 InputLabelProps={{
                     shrink: true,
                 }}
